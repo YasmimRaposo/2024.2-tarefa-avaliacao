@@ -79,6 +79,22 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 **Copilot informa**: Essa questão incentiva os alunos a considerarem tanto os aspectos econômicos quanto os de segurança ao avaliar diferentes arquiteturas de sistemas operacionais.
 
+#### **RESPOSTA:** 
+### Arquitetura Monolítica
+A arquitetura monolítica integra todos os componentes do sistema operacional em um único bloco de código, facilitando o desenvolvimento inicial, mas tornando a manutenção mais complexa e cara. A equipe precisa ter conhecimento abrangente do sistema, pois qualquer mudança pode afetar todo o sistema, exigindo testes extensivos. Em termos de segurança, uma falha em qualquer parte pode comprometer todo o SO, dificultando a implementação de medidas robustas. As atualizações e correções são desafiadoras, pois qualquer alteração pode impactar significativamente o sistema.<br>
+Um exemplo clássico de SO com arquitetura monolítica é o Unix, conhecido por sua estrutura integrada, que simplifica o desenvolvimento inicial, mas apresenta desafios em manutenção e segurança.
+
+### Arquitetura Microkernel
+A arquitetura microkernel envolve a criação de um núcleo mínimo e a implementação de serviços adicionais como processos separados, tornando a implementação mais demorada e cara inicialmente. No entanto, a manutenção é mais fácil e menos custosa, pois os componentes são isolados, permitindo atualizações e correções em módulos específicos sem impactar o núcleo.
+
+A equipe de desenvolvimento precisa ter conhecimento especializado para criar e manter módulos separados. Em termos de segurança, essa arquitetura é geralmente mais segura, pois isola os serviços em processos distintos, limitando o impacto de falhas ou ataques a um único componente e protegendo o núcleo do sistema.
+
+A facilidade de atualização e correção de falhas é um ponto forte dessa arquitetura, já que alterações podem ser feitas em módulos específicos sem afetar o restante do sistema. Um exemplo de sistema operacional que utiliza a arquitetura microkernel é o Minix.
+### Arquitetura em Camadas
+A arquitetura em camadas possui uma implementação moderadamente complexa, já que cada camada deve ser bem definida e interagir corretamente com as outras. A manutenção é relativamente fácil, pois problemas podem ser isolados e corrigidos em camadas específicas, sem afetar o restante do sistema. A equipe precisa ter conhecimento especializado em cada camada, mas a compartimentação facilita a manutenção.
+Em termos de segurança, essa arquitetura oferece um bom equilíbrio, pois cada camada pode implementar suas próprias medidas de segurança. No entanto, a comunicação entre camadas deve ser bem gerenciada para evitar vulnerabilidades. A facilidade de atualização e correção de falhas é uma vantagem, já que problemas podem ser isolados e corrigidos em camadas específicas.
+Um exemplo prático de sistema operacional que utiliza essa arquitetura é o OS/2.
+
 # Questão 3. Introdução à Segurança de Sistemas Operacionais
 
 ## Texto informativo
