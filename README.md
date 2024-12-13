@@ -5,6 +5,7 @@
 - **Público alvo**: alunos da disciplina de SO (Sistemas Operacionais) do curso de TADS (Superior em Tecnologia em Análise e Desenvolvimento de Sistemas) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central).
 - disciplina: **SO** Sistemas Operacionais
 - professor: [Leonardo A. Minora](https://github.com/leonardo-minora)
+- Aluna: [Yasmim Fernandes de O. Raposo]((https://github.com/YasmimRaposo)
 
 ## Avaliação
 - **Lembre de fazer o fork deste repositório**
@@ -23,11 +24,11 @@ Considere as funções e objetivos principais de um sistema operacional conforme
 
 #### **RESPOSTA:** 
 O sistema operacional é o primeiro programa executado ao ligar o computador. Ele gerencia os recursos do computador conforme as necessidades do usuário, como memória e execução de aplicativos. Para garantir que os programas rodem de forma eficiente e evitar conflitos, o sistema operacional deve atuar de diversas formas, já que os recursos de um sistema possui suas particularidades e para mitigar possíveis problemas o SO possui funcionalidades específicas para abstrair e gerenciar os recursos. Essas funcionalidades são:<br>
-- Gerenciamento processador → visa distribuir de forma justa a capacidade do processador para executar tarefas. Exemplo: quando você está com o site do spotify aberto e abre outra aba para realizar outra atividade na web. <br>
+- Gerenciamento processador → visa distribuir de forma justa a capacidade do processador para executar tarefas. Exemplo: quando você está com o site do spotify aberto e abre outra aba para realizar outra atividade na web, o SO aloca tempo de CPU para cada atividade. <br>
 - Gerenciamento de memória → visa fornecer de modo independente uma área de memória para cada aplicação.Exemplo: quando você está jogando um jogo com um bom consumo de memória RAM e com outras tarefas abertas, como o software do word.<br>
-- Gerenciamento de dispositivos → tem como objetivo implementar a interação com cada dispositivo por meio de drivers e criar modelos abstratos que permitam agrupar vários dispositivos similares sob a mesma interface de acesso. Exemplo: Ao utilizar fones de ouvido e conectá-los ao PC, notebook... <br>
+- Gerenciamento de dispositivos → tem como objetivo implementar a interação com cada dispositivo por meio de drivers e criar modelos abstratos que permitam agrupar vários dispositivos similares sob a mesma interface de acesso. Exemplo: Ao utilizar fones de ouvido e conectá-los ao PC, notebook..., o SO detecta os dispositivos de entrada <br>
 - Gerenciamento de arquivos → visa criar arquivos e diretórios, definindo sua interface de acesso e as regras
-para seu uso. Exemplo: Criar, renomear pastas no "Explorador de arquivos" <br>
+para seu uso. Exemplo: O gerenciamento de arquivos ocorre quando você cria e renomea pastas no "Explorador de arquivos" <br>
 - Gerenciamento de proteção → responsável por garantir que apenas o destinatário tenha acesso à algo restrito e garantir segurança. Exemplo: quando há aviso de site de proteção duvidosa e o SO usa firewall para bloquear acessos não autorizados e um antivírus para detectar e remover possíveis ameaças.<br>
 
 
