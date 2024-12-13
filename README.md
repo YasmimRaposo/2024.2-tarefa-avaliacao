@@ -21,7 +21,15 @@ Considere as funções e objetivos principais de um sistema operacional conforme
 
 **Dica**: Pense em exemplos práticos de como o sistema operacional realiza essas tarefas no dia a dia de um usuário.
 
-**Copilot informa**: Essa questão incentiva os alunos a explorarem os conceitos fundamentais e a aplicarem o conhecimento teórico em situações práticas. Se precisar de mais alguma coisa, estou aqui para ajudar!
+#### **RESPOSTA:** 
+O sistema operacional é o primeiro programa executado ao ligar o computador. Ele gerencia os recursos do computador conforme as necessidades do usuário, como memória e execução de aplicativos. Para garantir que os programas rodem de forma eficiente e evitar conflitos, o sistema operacional deve atuar de diversas formas, já que os recursos de um sistema possui suas particularidades e para mitigar possíveis problemas o SO possui funcionalidades específicas para abstrair e gerenciar os recursos. Essas funcionalidades são:<br>
+- Gerenciamento processador → visa distribuir de forma justa a capacidade do processador para executar tarefas. Exemplo: quando você está com o site do spotify aberto e abre outra aba para realizar outra atividade na web. <br>
+- Gerenciamento de memória → visa fornecer de modo independente uma área de memória para cada aplicação.Exemplo: quando você está jogando um jogo com um bom consumo de memória RAM e com outras tarefas abertas, como o software do word.<br>
+- Gerenciamento de dispositivos → tem como objetivo implementar a interação com cada dispositivo por meio de drivers e criar modelos abstratos que permitam agrupar vários dispositivos similares sob a mesma interface de acesso. Exemplo: Ao utilizar fones de ouvido e conectá-los ao PC, notebook... <br>
+- Gerenciamento de arquivos → visa criar arquivos e diretórios, definindo sua interface de acesso e as regras
+para seu uso. Exemplo: Criar, renomear pastas no "Explorador de arquivos" <br>
+- Gerenciamento de proteção → responsável por garantir que apenas o destinatário tenha acesso à algo restrito e garantir segurança. Exemplo: quando há aviso de site de proteção duvidosa e o SO usa firewall para bloquear acessos não autorizados e um antivírus para detectar e remover possíveis ameaças.<br>
+
 
 # Questão 2. Estrutura de sistemas operacionais
 
