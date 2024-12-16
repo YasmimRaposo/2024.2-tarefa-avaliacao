@@ -134,13 +134,16 @@ Benefícios:<br>
 - Impedir acesso de pessoas má-intencionadas<br>
 - Monitor de referências(saber quem acessou, horário, etc)<br>
 - Proteção de dados, ou seja, garantir  que apenas usuários autorizados tenham acesso a informações sensíveis.<br>
+  
 Desvantagens:<br>
 - Gerenciamento complexo, ou seja, manutenção de políticas de acesso podem ser complexas.<br>
 - Sobrecarga do sistema, ou seja, verificação contínua de permissões pode consumir recursos do sistema.<br>
+ 
 Impacto na experiência do usuário: <br>
 - Aumento da segurança e da confiança do usuário.<br>
 - Pode gerar frustração se as políticas de acesso forem muito restritivas ao impedir o usuário de realizar algumas tarefas.<br>
-Exemplo de situação: <br>
+  
+Exemplo de situação: <br> 
 - Sistemas financeiros. <br>
 
 **Criptografia:**<br>
