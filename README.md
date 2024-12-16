@@ -156,7 +156,7 @@ Desvantagens:<br>
 
 Impacto na experiência do usuário: <br>
 - Aumento da segurança e da confiança do usuário, pois seus dados estão mais protegidos.<br>
--Pode exigir que o usuário digite senhas com frequência, o que pode ser inconveniente. Além disso, a criptografia pode aumentar o tempo de inicialização do sistema e o tempo de acesso aos arquivos.<br>
+- Pode exigir que o usuário digite senhas com frequência, o que pode ser inconveniente. Além disso, a criptografia pode aumentar o tempo de inicialização do sistema e o tempo de acesso aos arquivos.<br>
 
 Exemplo de situação:: <br>
 - WhatsApp: Todas as mensagens, chamadas de voz e videochamadas são criptografadas de ponta a ponta. Isso significa que apenas o remetente e o destinatário podem ler ou ouvir as mensagens, e nem mesmo o WhatsApp pode decifrá-las.
