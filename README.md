@@ -81,13 +81,24 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 #### **RESPOSTA:** 
 **Arquitetura Monolítica:**<br>
-A arquitetura monolítica integra todos os componentes do sistema operacional em um único bloco de código, facilitando o desenvolvimento inicial, mas tornando a manutenção mais complexa e cara. A equipe precisa ter conhecimento abrangente do sistema, pois qualquer mudança pode afetar todo o sistema, exigindo testes extensivos. Em termos de segurança, uma falha em qualquer parte pode comprometer todo o SO, dificultando a implementação de medidas robustas. As atualizações e correções são desafiadoras, pois qualquer alteração pode impactar significativamente o sistema. Um exemplo clássico de SO com arquitetura monolítica é o Unix, conhecido por sua estrutura integrada, que simplifica o desenvolvimento inicial, mas apresenta desafios em manutenção e segurança.<br>
+A arquitetura monolítica integra todos os componentes do sistema operacional em um **único bloco de código**, facilitando o desenvolvimento inicial, mas tornando a **manutenção mais complexa e cara**. A equipe precisa ter conhecimento abrangente do sistema, pois **qualquer mudança pode afetar todo o sistema**, exigindo testes extensivos. Em termos de segurança, **uma falha em qualquer parte pode comprometer todo o SO**, dificultando a implementação de medidas robustas. As atualizações e correções são desafiadoras, pois qualquer alteração pode impactar significativamente o sistema. Um exemplo clássico de SO com arquitetura monolítica é o Unix, conhecido por sua estrutura integrada, que simplifica o desenvolvimento inicial, mas apresenta desafios em manutenção e segurança.<br>
+
+![image](https://github.com/user-attachments/assets/ce309153-f28d-4a09-8683-ed7f51c90784)
+> Na foto temos a estrutura de uma arquitetura monolítica, ou seja, todas as funções do aplicativo são gerenciadas e executadas em um só lugar, e o estilo de arquitetura que desenvolve um conjunto de pequenos serviços chamado "Microsserviços". 
+
+<br>
 
 **Arquitetura Microkernel:**<br>
-A arquitetura microkernel envolve a criação de um núcleo mínimo e a implementação de serviços adicionais como processos separados, tornando a implementação mais demorada e cara inicialmente. No entanto, a manutenção é mais fácil e menos custosa, pois os componentes são isolados, permitindo atualizações e correções em módulos específicos sem impactar o núcleo. A equipe de desenvolvimento precisa ter conhecimento especializado para criar e manter módulos separados. Em termos de segurança, essa arquitetura é geralmente mais segura, pois isola os serviços em processos distintos, limitando o impacto de falhas ou ataques a um único componente e protegendo o núcleo do sistema. A facilidade de atualização e correção de falhas é um ponto forte dessa arquitetura, já que alterações podem ser feitas em módulos específicos sem afetar o restante do sistema. Um exemplo de sistema operacional que utiliza a arquitetura microkernel é o Minix.<br>
+A arquitetura microkernel envolve a **criação de um núcleo mínimo e a implementação de serviços adicionais como processos separados**, tornando a implementação mais demorada e cara inicialmente. No entanto, a **manutenção é mais fácil e menos custosa**, pois os componentes são isolados, permitindo atualizações e correções em módulos específicos sem impactar o núcleo. A equipe de desenvolvimento precisa ter conhecimento especializado para criar e manter módulos separados. Em termos de segurança, essa arquitetura é geralmente mais segura, pois **isola os serviços em processos distintos, limitando o impacto de falhas** ou ataques a um único componente e protegendo o núcleo do sistema. A facilidade de atualização e correção de falhas é um ponto forte dessa arquitetura, já que alterações podem ser feitas em módulos específicos sem afetar o restante do sistema. Um exemplo de sistema operacional que utiliza a arquitetura microkernel é o Minix.<br>
+
+![image](https://github.com/user-attachments/assets/1c215e74-88a0-4739-be1d-9b3590015dd9)
+
 
 **Arquitetura em Camadas:**<br>
-A arquitetura em camadas possui uma implementação moderadamente complexa, já que cada camada deve ser bem definida e interagir corretamente com as outras. A manutenção é relativamente fácil, pois problemas podem ser isolados e corrigidos em camadas específicas, sem afetar o restante do sistema. A equipe precisa ter conhecimento especializado em cada camada, mas a compartimentação facilita a manutenção. Em termos de segurança, essa arquitetura oferece um bom equilíbrio, pois cada camada pode implementar suas próprias medidas de segurança. No entanto, a comunicação entre camadas deve ser bem gerenciada para evitar vulnerabilidades. A facilidade de atualização e correção de falhas é uma vantagem, já que problemas podem ser isolados e corrigidos em camadas específicas. Um exemplo prático de sistema operacional que utiliza essa arquitetura é o OS/2.
+A arquitetura em camadas possui uma **implementação moderadamente complexa**, já que cada **camada** deve ser bem definida e **interagir corretamente com as outras**. A **manutenção é relativamente fácil**, pois **problemas podem ser isolados e corrigidos em camadas específicas**, sem afetar o restante do sistema. A equipe precisa ter conhecimento especializado em cada camada, mas a compartimentação facilita a manutenção. Em termos de segurança, essa arquitetura oferece um bom equilíbrio, pois **cada camada pode implementar suas próprias medidas de segurança**. No entanto, a comunicação entre camadas deve ser bem gerenciada para evitar vulnerabilidades. A facilidade de atualização e correção de falhas é uma vantagem, já que problemas podem ser isolados e corrigidos em camadas específicas. Um exemplo prático de sistema operacional que utiliza essa arquitetura é o OS/2.<br>
+
+![image](https://github.com/user-attachments/assets/2dd08956-63e6-4944-8438-eda58d6abd0d)
+
 
 # Questão 3. Introdução à Segurança de Sistemas Operacionais
 
@@ -117,6 +128,38 @@ Considerando os mecanismos de segurança discutidos, analise como a implementaç
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre o equilíbrio entre segurança, performance e usabilidade, aplicando conceitos teóricos a contextos práticos.
 
+#### **RESPOSTA:** 
+**Controle de acesso:**<br>
+Benefícios:<br>
+- Impedir acesso de pessoas má-intencionadas<br>
+- Monitor de referências(saber quem acessou, horário, etc)<br>
+- Proteção de dados, ou seja, garantir  que apenas usuários autorizados tenham acesso a informações sensíveis.<br>
+Desvantagens:<br>
+- Gerenciamento complexo, ou seja, manutenção de políticas de acesso podem ser complexas.<br>
+- Sobrecarga do sistema, ou seja, verificação contínua de permissões pode consumir recursos do sistema.<br>
+Impacto na experiência do usuário: <br>
+- Aumento da segurança e da confiança do usuário.<br>
+- Pode gerar frustração se as políticas de acesso forem muito restritivas ao impedir o usuário de realizar algumas tarefas.<br>
+Exemplo de situação: <br>
+- Sistemas financeiros. <br>
+
+**Criptografia:**<br>
+Benefícios:<br>
+- Confidencialidade, ou seja, protege os dados em trânsito e em repouso, tornando-os ilegíveis para intrusos.<br>
+- Integridade, ou seja, garante que os dados não sejam alterados durante a transmissão ou armazenamento.<br>
+- Autenticação, ou seja, verifica a identidade de usuários e dispositivos, garantindo que apenas entidades autorizadas tenham acesso aos dados.<br>
+
+Desvantagens:<br>
+- Impacto na performance: Os algoritmos de criptografia consomem recursos computacionais, podendo afetar a velocidade de processamento e a responsividade do sistema.<br>
+- Gerenciamento de chaves: A geração, armazenamento e distribuição de chaves criptográficas exigem cuidados especiais para evitar sua exposição e perda.<br>
+- Complexidade: A implementação correta de sistemas criptográficos requer conhecimento técnico especializado.<br>
+
+Impacto na experiência do usuário: <br>
+- Aumento da segurança e da confiança do usuário, pois seus dados estão mais protegidos.<br>
+-Pode exigir que o usuário digite senhas com frequência, o que pode ser inconveniente. Além disso, a criptografia pode aumentar o tempo de inicialização do sistema e o tempo de acesso aos arquivos.<br>
+
+Exemplo de situação:: <br>
+- WhatsApp: Todas as mensagens, chamadas de voz e videochamadas são criptografadas de ponta a ponta. Isso significa que apenas o remetente e o destinatário podem ler ou ouvir as mensagens, e nem mesmo o WhatsApp pode decifrá-las.
 
 # Questão 4. Custo de Processamento versus Algoritmo Ótimo de Escalonamento
 
