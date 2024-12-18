@@ -5,7 +5,8 @@
 - **Público alvo**: alunos da disciplina de SO (Sistemas Operacionais) do curso de TADS (Superior em Tecnologia em Análise e Desenvolvimento de Sistemas) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central).
 - disciplina: **SO** Sistemas Operacionais
 - professor: [Leonardo A. Minora](https://github.com/leonardo-minora)
-- Aluna: [Yasmim Fernandes de O. Raposo]((https://github.com/YasmimRaposo)
+- Aluna: [Yasmim Fernandes de O. Raposo](https://github.com/YasmimRaposo)
+- Matrícula: 20231014040007
 
 ## Avaliação
 - **Lembre de fazer o fork deste repositório**
@@ -22,7 +23,7 @@ Considere as funções e objetivos principais de um sistema operacional conforme
 
 **Dica**: Pense em exemplos práticos de como o sistema operacional realiza essas tarefas no dia a dia de um usuário.
 
-#### **RESPOSTA:** 
+#### **RESPOSTA DA QUESTÃO 1:** 
 O sistema operacional é o primeiro programa executado ao ligar o computador. Ele gerencia os recursos do computador conforme as necessidades do usuário, como memória e execução de aplicativos. Para garantir que os programas rodem de forma eficiente e evitar conflitos, o sistema operacional deve atuar de diversas formas, já que os recursos de um sistema possui suas particularidades e para mitigar possíveis problemas o SO possui funcionalidades específicas para abstrair e gerenciar os recursos. Essas funcionalidades são:<br>
 - Gerenciamento processador → visa distribuir de forma justa a capacidade do processador para executar tarefas. Exemplo: quando você está com o site do spotify aberto e abre outra aba para realizar outra atividade na web, o SO aloca tempo de CPU para cada atividade. <br>
 - Gerenciamento de memória → visa fornecer de modo independente uma área de memória para cada aplicação.Exemplo: quando você está jogando um jogo com um bom consumo de memória RAM e com outras tarefas abertas, como o software do word.<br>
@@ -79,7 +80,7 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 **Copilot informa**: Essa questão incentiva os alunos a considerarem tanto os aspectos econômicos quanto os de segurança ao avaliar diferentes arquiteturas de sistemas operacionais.
 
-#### **RESPOSTA:** 
+#### **RESPOSTA DA QUESTÃO 2:** 
 **Arquitetura Monolítica:**<br>
 A arquitetura monolítica integra todos os componentes do sistema operacional em um **único bloco de código**, facilitando o desenvolvimento inicial, mas tornando a **manutenção mais complexa e cara**. A equipe precisa ter conhecimento abrangente do sistema, pois **qualquer mudança pode afetar todo o sistema**, exigindo testes extensivos. Em termos de segurança, **uma falha em qualquer parte pode comprometer todo o SO**, dificultando a implementação de medidas robustas. As atualizações e correções são desafiadoras, pois qualquer alteração pode impactar significativamente o sistema. Um exemplo clássico de SO com arquitetura monolítica é o Unix, conhecido por sua estrutura integrada, que simplifica o desenvolvimento inicial, mas apresenta desafios em manutenção e segurança.<br>
 
@@ -128,7 +129,7 @@ Considerando os mecanismos de segurança discutidos, analise como a implementaç
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre o equilíbrio entre segurança, performance e usabilidade, aplicando conceitos teóricos a contextos práticos.
 
-#### **RESPOSTA:** 
+#### **RESPOSTA DA QUESTÃO 3:** 
 **Controle de acesso:**<br>
 Benefícios:<br>
 - Impedir acesso de pessoas má-intencionadas<br>
@@ -183,6 +184,7 @@ Um algoritmo ótimo de escalonamento é aquele que maximiza a eficiência do sis
 - **Round Robin (RR)**: Oferece uma abordagem justa, atribuindo fatias de tempo iguais a todos os processos, mas pode resultar em maior sobrecarga de contexto.
 - **Priority Scheduling**: Processos com maior prioridade são executados primeiro, mas pode levar à inanição de processos de baixa prioridade.
 
+
 ## Questão
 
 Considerando os conceitos de custo de processamento e algoritmo ótimo de escalonamento, analise como diferentes algoritmos de escalonamento podem impactar a performance de um sistema operacional em termos de tempo de resposta, tempo de espera e utilização do processador. Em sua resposta, aborde os seguintes pontos:
@@ -193,6 +195,72 @@ Considerando os conceitos de custo de processamento e algoritmo ótimo de escalo
 **Dica:** Pense em como esses algoritmos são aplicados em diferentes cenários, como sistemas de tempo real, servidores web e sistemas operacionais de uso geral.
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre a complexidade e os trade-offs envolvidos na escolha de um algoritmo de escalonamento, aplicando conceitos teóricos a contextos práticos.
+
+
+#### **RESPOSTA DA QUESTÃO 4:**<br>
+**First-come, first served:**<br>
+Vantagem:<br>
+- atende processos na ordem de chegada, como uma fila(FIFO).<br>
+
+Desvantagem:<br>
+Pode ocorrer atrasos se houver muitos processos longos na frente, fazendo com que os processos curtos fiquem à muito tempo na fila, conhecido como "efeito comboio".<br>
+
+Impacto: <br>
+- Desempenho, pois aumenta significativamente o tempo de espera médio, especialmente em cenários com uma mistura de processos longos e curtos<br>
+
+Exemplo: <br>
+- Em um servidor de impressão compartilhada, os documentos enviados para impressão são processados na ordem em que chegam.<br>
+
+**Round Robin (RR):**<br>
+Vantagem: <br>
+- cada processo recebe uma fatia de tempo da CPU de forma justa.<br>
+
+Desvantagem:<br>
+- trocas de contexto podem diminuir a eficiência, principalmente se a fatia de tempo de CPU for curta.<br>
+
+Impacto:<br>
+- Desempenho, pois frequentemente gera um overhead devido às trocas de contexto.<br>
+
+Exemplo:<br>
+- Jogos Multiplayer: Em um servidor de jogos multiplayer, cada jogador recebe uma fatia de tempo de processamento de forma justa.
+
+
+**Shortest Job Next (SJN):**<br>
+Vantagem:<br>
+- seleciona o processo com o menor tempo de execução previsto para ser executado primeiro, minimizando, assim, o tempo de espera médio<br>
+
+Desvantagem:<br>
+- possibilidade de inanição de processos longos quando há fluxo constante de muitos processos curtos.<br>
+- Dificil implementação para prever o tempo médio, tornando-a imprecisa.<br>
+
+Impacto: <br>
+- Desempenho (relacionado ao tempo de execução)<br>
+- Implementação complexa.<br>
+
+Exemplo: <br>
+- Algumas impressoras utilizam o algoritmo SJN e imprimem os documentos menores que levam menos tempo, como uma página de texto, antes de imprimir documentos mais longos, como relatórios extensos.
+
+**Priority Scheduling:**<br>
+Vantagem:<br>
+- seleciona o processo de maior prioridade<br>
+
+Desvantagem:<br>
+- possibilidade de inanição de processos de baixa prioridade, que podem ser adiados indefinidamente se processos de alta prioridade continuarem chegando<br>
+
+Impacto: <br>
+- Desempenho: Melhora o tempo de resposta para processos prioritários, mas pode prejudicar processos de baixa prioridade.<br>
+- Implementação: Pode ser complexa, especialmente ao definir e gerenciar as prioridades dos processos.<br>
+
+Exemplo: <br>
+- Em Sistemas operacionais de uso geral o scheduler de prioridade é usado para garantir que processos críticos do sistema (como atualizações de segurança, gerenciamento de memória, ou drivers de hardware) sejam executados antes de processos de baixa prioridade (como aplicativos de usuário que estão em segundo plano)<br>
+
+
+
+
+
+
+
+
 
 # Questão 5. Aplicativo em python vs aplicativos em c
 
@@ -207,3 +275,25 @@ Explique o caminho que as instruções seguem desde um aplicativo escrito em Pyt
 **Dica:** Compare e contraste os dois processos, destacando as principais diferenças e semelhanças na forma como as instruções são processadas e executadas.
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre os diferentes caminhos que as instruções seguem em linguagens interpretadas e compiladas, aplicando conceitos teóricos a contextos práticos.
+
+#### **RESPOSTA DA QUESTÃO 5:**<br>
+
+### Aplicativo em Python:<br>
+
+- Papel do Interpretador: Python é uma linguagem interpretada. O código-fonte é executado diretamente pelo interpretador, que o **converte em bytecode, uma representação intermediária próxima ao código de máquina**. Este bytecode é então executado pela Máquina Virtual Python (PVM).<br>
+- Interação com Kernel e Drivers: Durante a execução, o interpretador pode fazer **chamadas ao sistema operacional para interagir com hardware**, como entrada/saída de dados e acesso a arquivos. Essas chamadas são **enviadas ao kernel**, que usa drivers apropriados para o hardware.<br>
+- Tradução para Código Binário: O interpretador **converte dinamicamente o bytecode em instruções de máquina durante a execução**, oferecendo flexibilidade, mas com desempenho inferior devido à sobrecarga da interpretação em tempo real.<br>
+
+### Aplicativo em C:<br>
+
+- Processo de Compilação: C é uma linguagem compilada, **transformando o código-fonte em código de máquina antes da execução**. O processo **envolve pré-processamento**, compilação, montagem (assembly) e linkagem, resultando em um executável.<br>
+- Interação com Kernel e Drivers: O executável pode **fazer chamadas ao sistema operacional para interagir com hardware, gerenciadas pelo kernel e drivers de dispositivos**.<br>
+- Tradução para Código Binário: A **conversão para código binário ocorre durante a compilação**, criando um executável otimizado para a arquitetura alvo.<br>
+
+### Comparação entre os Processos:<br>
+
+- Tradução de Código: Python usa interpretação em tempo de execução, enquanto C usa compilação prévia.<br>
+- Desempenho: Python pode ser mais lento devido à interpretação em tempo real. C geralmente é mais rápido, pois o código já está em formato binário otimizado.<br>
+- Flexibilidade e Portabilidade: Python é altamente portátil, rodando em várias plataformas com o interpretador adequado. C é menos portável, podendo exigir ajustes e recompilação para diferentes plataformas.<br>
+- Interação com o Sistema Operacional: Em ambos os casos, a interação com o hardware é mediada pelo kernel e drivers. No entanto, C oferece ao desenvolvedor mais controle sobre essas interações, permitindo otimizações de desempenho e uso de recursos.<br>
+
